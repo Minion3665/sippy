@@ -21,6 +21,22 @@
       "name": "nixpkgs-unstable",
       "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre823822.bdfd0f2afcf7/nixexprs.tar.xz",
       "hash": "sha256-rzbw22lKKu7j1++jEP8C612APphaJoRwgEgJE4RxcGE="
+    },
+    "pyVoIP": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "tayler6000",
+        "repo": "pyVoIP"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v1.6.9",
+      "revision": "2a693346cb493bc3e7a8c4c820a7c88af6deeb92",
+      "url": "https://api.github.com/repos/tayler6000/pyVoIP/tarball/refs/tags/v1.6.9",
+      "hash": "sha256-7q3/nvCb/arANT8bfeF1ra8uhzHHl0DxqFLAY9XVVkU="
     }
   },
   "version": 6
