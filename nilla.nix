@@ -55,6 +55,7 @@ nilla.create (
           {
             mkShell,
             python3,
+            ruff,
             system,
             ...
           }:
@@ -63,6 +64,8 @@ nilla.create (
               (python3.withPackages (pyPkgs: [
                 config.packages.pyVoIP.result.${system}
                 pyPkgs.discordpy
+                pyPkgs.python-lsp-server
+                pyPkgs.ruff
               ]))
             ];
           };
