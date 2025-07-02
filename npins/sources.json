@@ -1,20 +1,17 @@
 {
   "pins": {
     "PySIP": {
-      "type": "GitRelease",
+      "type": "Git",
       "repository": {
         "type": "GitHub",
         "owner": "moha-abdi",
         "repo": "PySIP"
       },
-      "pre_releases": false,
-      "version_upper_bound": null,
-      "release_prefix": null,
+      "branch": "main",
       "submodules": false,
-      "version": "v1.8.0",
-      "revision": "a27c689f49bb4ceee8a7c15ab908995de9ac4e6a",
-      "url": "https://api.github.com/repos/moha-abdi/PySIP/tarball/refs/tags/v1.8.0",
-      "hash": "sha256-5FeItrxLR6TxNlmh2RHaWfOamM04LU1qpgXd7Jy3Xhw="
+      "revision": "efb7b6fdbda7ac6b75b29b8b7049690b2d2fb1a3",
+      "url": "https://github.com/moha-abdi/PySIP/archive/efb7b6fdbda7ac6b75b29b8b7049690b2d2fb1a3.tar.gz",
+      "hash": "sha256-zehgxBF79g7LE1mhOHIzBe5fTZYYN5ybIezIC2WsItU="
     },
     "edge-tts": {
       "type": "GitRelease",

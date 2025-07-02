@@ -34,7 +34,7 @@ async def main():
         # This isn't JavaScript where you can just await undefined you know...
         print(f"Got SIP message: {message.status}@{message.type}: {message.data}")
 
-    account.sip_core.on_message_callbacks.append(log)
+    account.sip_core.on_message_callbacks.insert(0, log)
     
     await account.register()
     print("Registered account...")

@@ -553,3 +553,72 @@ Traceback (most recent call last):
     A1_string = self.username + ":" + realm + ":" + self.password
                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~
 TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 18:19:36,592 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 18:19:36,696 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 99, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 331, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 283, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 418, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 359, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 248, in build_register_message
+    response = self.sip_core.generate_response(
+        method="REGISTER",
+    ...<5 lines>...
+        cnonce=cnonce,
+    )
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 149, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 19:54:16,765 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 19:54:16,868 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 99, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 331, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 283, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 418, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 359, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 248, in build_register_message
+    response = self.sip_core.generate_response(
+        method="REGISTER",
+    ...<5 lines>...
+        cnonce=cnonce,
+    )
+  File "/nix/store/nrxyvl7hsz80jvmvmq62sx3y5dv3bayv-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 149, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 20:02:11,181 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 20:02:11,284 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/5rp59r7wlpy2i0gyzi430aypn6hric04-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 99, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/5rp59r7wlpy2i0gyzi430aypn6hric04-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 331, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/5rp59r7wlpy2i0gyzi430aypn6hric04-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 283, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/5rp59r7wlpy2i0gyzi430aypn6hric04-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 418, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/5rp59r7wlpy2i0gyzi430aypn6hric04-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 359, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/5rp59r7wlpy2i0gyzi430aypn6hric04-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 248, in build_register_message
+    response = self.sip_core.generate_response(
+        method="REGISTER",
+    ...<5 lines>...
+        cnonce=cnonce,
+    )
+  File "/nix/store/5rp59r7wlpy2i0gyzi430aypn6hric04-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 149, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
