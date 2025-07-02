@@ -1,5 +1,37 @@
 {
   "pins": {
+    "PySIP": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "moha-abdi",
+        "repo": "PySIP"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v1.8.0",
+      "revision": "a27c689f49bb4ceee8a7c15ab908995de9ac4e6a",
+      "url": "https://api.github.com/repos/moha-abdi/PySIP/tarball/refs/tags/v1.8.0",
+      "hash": "sha256-5FeItrxLR6TxNlmh2RHaWfOamM04LU1qpgXd7Jy3Xhw="
+    },
+    "edge-tts": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "rany2",
+        "repo": "edge-tts"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "7.0.2",
+      "revision": "ffe009af9a11fb8e631f5ab241730ea4588a3020",
+      "url": "https://api.github.com/repos/rany2/edge-tts/tarball/refs/tags/7.0.2",
+      "hash": "sha256-ZSao6DvCEJAJmxBB5UjvPikcsj9olTQLmrWVX6O+c4g="
+    },
     "nilla": {
       "type": "GitRelease",
       "repository": {
@@ -22,21 +54,18 @@
       "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre823822.bdfd0f2afcf7/nixexprs.tar.xz",
       "hash": "sha256-rzbw22lKKu7j1++jEP8C612APphaJoRwgEgJE4RxcGE="
     },
-    "pyVoIP": {
-      "type": "GitRelease",
+    "pyproject": {
+      "type": "Git",
       "repository": {
         "type": "GitHub",
-        "owner": "tayler6000",
-        "repo": "pyVoIP"
+        "owner": "pyproject-nix",
+        "repo": "pyproject.nix"
       },
-      "pre_releases": false,
-      "version_upper_bound": null,
-      "release_prefix": null,
+      "branch": "master",
       "submodules": false,
-      "version": "v1.6.9",
-      "revision": "2a693346cb493bc3e7a8c4c820a7c88af6deeb92",
-      "url": "https://api.github.com/repos/tayler6000/pyVoIP/tarball/refs/tags/v1.6.9",
-      "hash": "sha256-7q3/nvCb/arANT8bfeF1ra8uhzHHl0DxqFLAY9XVVkU="
+      "revision": "e824458bd917b44bf4c38795dea2650336b2f55d",
+      "url": "https://github.com/pyproject-nix/pyproject.nix/archive/e824458bd917b44bf4c38795dea2650336b2f55d.tar.gz",
+      "hash": "sha256-ThKBd8XSvITAh2JqU7enOp8AfKeQgf9u7zYC41cnBE4="
     }
   },
   "version": 6

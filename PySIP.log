@@ -1,0 +1,555 @@
+2025-07-01 23:36:31,842 - PySIP.utils.logger - INFO - Detecting connection type (UDP/TCP/TLS). This might take some time...
+2025-07-01 23:36:32,547 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-01 23:36:34,235 - PySIP.utils.logger - DEBUG - Error during connection: Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+2025-07-01 23:36:34,409 - PySIP.utils.logger - DEBUG - Error during connection: [SSL] internal error (_ssl.c:1028)
+2025-07-01 23:36:34,409 - PySIP.utils.logger - INFO - Connection type detected: UDP
+2025-07-01 23:37:15,086 - PySIP.utils.logger - INFO - Detecting connection type (UDP/TCP/TLS). This might take some time...
+2025-07-01 23:37:15,859 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-01 23:37:17,423 - PySIP.utils.logger - DEBUG - Error during connection: Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+2025-07-01 23:37:17,598 - PySIP.utils.logger - DEBUG - Error during connection: [SSL] internal error (_ssl.c:1028)
+2025-07-01 23:37:17,598 - PySIP.utils.logger - INFO - Connection type detected: UDP
+2025-07-01 23:37:18,300 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-01 23:37:18,301 - PySIP.utils.logger - INFO - Sip Account: banana registered to the server.
+2025-07-01 23:40:12,225 - PySIP.utils.logger - INFO - Detecting connection type (UDP/TCP/TLS). This might take some time...
+2025-07-01 23:40:13,128 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-01 23:40:14,313 - PySIP.utils.logger - DEBUG - Error during connection: Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+2025-07-01 23:40:14,380 - PySIP.utils.logger - DEBUG - Error during connection: [SSL] internal error (_ssl.c:1028)
+2025-07-01 23:40:14,381 - PySIP.utils.logger - INFO - Connection type detected: UDP
+2025-07-01 23:40:15,157 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-01 23:40:15,158 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-01 23:41:53,104 - PySIP.utils.logger - INFO - Detecting connection type (UDP/TCP/TLS). This might take some time...
+2025-07-01 23:41:53,903 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-01 23:41:55,102 - PySIP.utils.logger - DEBUG - Error during connection: Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+2025-07-01 23:41:55,176 - PySIP.utils.logger - DEBUG - Error during connection: [SSL] internal error (_ssl.c:1028)
+2025-07-01 23:41:55,176 - PySIP.utils.logger - INFO - Connection type detected: UDP
+2025-07-01 23:41:55,807 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-01 23:41:55,808 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-01 23:59:49,004 - PySIP.utils.logger - INFO - Detecting connection type (UDP/TCP/TLS). This might take some time...
+2025-07-01 23:59:49,751 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-01 23:59:50,916 - PySIP.utils.logger - DEBUG - Error during connection: Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+2025-07-01 23:59:50,976 - PySIP.utils.logger - DEBUG - Error during connection: [SSL] internal error (_ssl.c:1028)
+2025-07-01 23:59:50,976 - PySIP.utils.logger - INFO - Connection type detected: UDP
+2025-07-01 23:59:51,667 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-01 23:59:51,668 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 00:01:35,894 - PySIP.utils.logger - INFO - Detecting connection type (UDP/TCP/TLS). This might take some time...
+2025-07-02 00:01:36,836 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-02 00:01:38,267 - PySIP.utils.logger - DEBUG - Error during connection: Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+2025-07-02 00:01:38,434 - PySIP.utils.logger - DEBUG - Error during connection: [SSL] internal error (_ssl.c:1028)
+2025-07-02 00:01:38,435 - PySIP.utils.logger - INFO - Connection type detected: UDP
+2025-07-02 00:01:39,249 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-02 00:01:39,249 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 00:01:39,908 - PySIP.utils.logger - DEBUG - Started stream now - id (2796850d-d601-4df1-ad34-4b59cfa5d776)
+2025-07-02 00:01:39,908 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 00:03:05,960 - PySIP.utils.logger - INFO - Detecting connection type (UDP/TCP/TLS). This might take some time...
+2025-07-02 00:03:07,048 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-02 00:03:08,222 - PySIP.utils.logger - DEBUG - Error during connection: Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+2025-07-02 00:03:08,289 - PySIP.utils.logger - DEBUG - Error during connection: [SSL] internal error (_ssl.c:1028)
+2025-07-02 00:03:08,289 - PySIP.utils.logger - INFO - Connection type detected: UDP
+2025-07-02 00:03:08,951 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-02 00:03:08,951 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 00:03:09,469 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 00:03:09,504 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 00:03:09,504 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 00:03:09,511 - PySIP.utils.logger - DEBUG - Started stream now - id (9ee3d317-a686-4c64-b8aa-7b2573e852f5)
+2025-07-02 00:03:09,511 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 00:03:09,570 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 00:03:13,573 - PySIP.utils.logger - WARNING - Failed to de-register Sip Account: testminion
+2025-07-02 00:03:13,574 - PySIP.utils.logger - DEBUG - Successfully closed connections
+2025-07-02 00:03:13,574 - PySIP.utils.logger - DEBUG - UDP Connection has been lost
+2025-07-02 00:03:13,596 - PySIP.utils.logger - DEBUG - The app will no longer register. Registeration task stopped.
+2025-07-02 00:04:07,112 - PySIP.utils.logger - INFO - Detecting connection type (UDP/TCP/TLS). This might take some time...
+2025-07-02 00:04:07,733 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-02 00:04:08,908 - PySIP.utils.logger - DEBUG - Error during connection: Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+2025-07-02 00:04:08,969 - PySIP.utils.logger - DEBUG - Error during connection: [SSL] internal error (_ssl.c:1028)
+2025-07-02 00:04:08,969 - PySIP.utils.logger - INFO - Connection type detected: UDP
+2025-07-02 00:04:09,782 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-02 00:04:09,783 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 00:04:10,296 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 00:04:10,325 - PySIP.utils.logger - DEBUG - Started stream now - id (1d80f7df-3a23-4a21-848a-794db9356b40)
+2025-07-02 00:04:10,325 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 00:04:10,354 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 00:04:10,354 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 00:04:10,397 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 00:04:14,400 - PySIP.utils.logger - WARNING - Failed to de-register Sip Account: testminion
+2025-07-02 00:04:14,400 - PySIP.utils.logger - DEBUG - Successfully closed connections
+2025-07-02 00:04:14,400 - PySIP.utils.logger - DEBUG - UDP Connection has been lost
+2025-07-02 00:04:14,430 - PySIP.utils.logger - DEBUG - The app will no longer register. Registeration task stopped.
+2025-07-02 00:10:43,395 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 00:10:43,994 - PySIP.utils.logger - DEBUG - Started stream now - id (bf2bc87c-e767-4cae-993f-2366e5a9d415)
+2025-07-02 00:10:43,995 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 00:10:44,001 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 00:11:57,532 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 00:11:57,986 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 00:11:58,013 - PySIP.utils.logger - DEBUG - Started stream now - id (523ee0ed-495b-473d-a5cd-54d9562a4cce)
+2025-07-02 00:11:58,013 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 00:12:48,877 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 00:12:49,218 - PySIP.utils.logger - DEBUG - Started stream now - id (493b5baf-8427-4d0c-a5a1-8e85a2c83364)
+2025-07-02 00:12:49,218 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 00:12:49,425 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 00:15:21,568 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 08:00:39,528 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 08:11:28,652 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 08:16:45,049 - PySIP.utils.logger - WARNING - Failed register Sip Account: sippy.
+2025-07-02 08:16:45,844 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 08:16:45,992 - PySIP.utils.logger - DEBUG - Started stream now - id (0e4c2b82-ea60-4b00-9383-fc2d0ff2a96b)
+2025-07-02 08:16:45,992 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 08:16:46,113 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 08:16:46,113 - PySIP.utils.logger - INFO - Call hanged up due to: Bad Request
+2025-07-02 08:16:46,147 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 08:16:50,150 - PySIP.utils.logger - WARNING - Failed to de-register Sip Account: sippy
+2025-07-02 08:16:50,151 - PySIP.utils.logger - DEBUG - Successfully closed connections
+2025-07-02 08:16:50,212 - PySIP.utils.logger - DEBUG - The app will no longer register. Registeration task stopped.
+2025-07-02 08:17:05,159 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 08:17:05,871 - PySIP.utils.logger - DEBUG - Started stream now - id (2581230a-4782-42d3-a964-b736960849da)
+2025-07-02 08:17:05,871 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 08:17:06,083 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 08:17:06,389 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 08:17:06,389 - PySIP.utils.logger - INFO - Call hanged up due to: Bad Request
+2025-07-02 08:17:06,487 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 08:17:10,491 - PySIP.utils.logger - WARNING - Failed to de-register Sip Account: sippy
+2025-07-02 08:17:10,492 - PySIP.utils.logger - DEBUG - Successfully closed connections
+2025-07-02 08:17:10,516 - PySIP.utils.logger - DEBUG - The app will no longer register. Registeration task stopped.
+2025-07-02 08:19:54,673 - PySIP.utils.logger - WARNING - Failed register Sip Account: sippy.
+2025-07-02 08:19:55,628 - PySIP.utils.logger - DEBUG - Started stream now - id (b9d7696a-fe91-4e06-ad73-6648e35e7d2b)
+2025-07-02 08:19:55,629 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 08:19:55,921 - PySIP.utils.logger - DEBUG - Error during connection: Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+2025-07-02 08:19:55,921 - PySIP.utils.logger - ERROR - Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+Traceback (most recent call last):
+  File "/nix/store/vgmwr9fb9aj21g7mb1zpsdfv2jpnb13r-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 79, in run
+    await self.sip_core.connect()
+  File "/nix/store/vgmwr9fb9aj21g7mb1zpsdfv2jpnb13r-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 189, in connect
+    self.reader, self.writer = await asyncio.open_connection(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.server, self.port, ssl=ssl_context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        lambda: protocol, host, port, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/base_events.py", line 1217, in _create_connection_transport
+    transport = self._make_ssl_transport(
+        sock, protocol, sslcontext, waiter,
+        server_side=server_side, server_hostname=server_hostname,
+        ssl_handshake_timeout=ssl_handshake_timeout,
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/selector_events.py", line 83, in _make_ssl_transport
+    ssl_protocol = sslproto.SSLProtocol(
+        self, protocol, sslcontext, waiter,
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout
+    )
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/sslproto.py", line 330, in __init__
+    self._sslobj = self._sslcontext.wrap_bio(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._incoming, self._outgoing,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        server_side=self._server_side,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        server_hostname=self._server_hostname)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/ssl.py", line 469, in wrap_bio
+    return self.sslobject_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        incoming, outgoing, server_side=server_side,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        server_hostname=self._encode_hostname(server_hostname),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        session=session, context=self,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/ssl.py", line 817, in _create
+    sslobj = context._wrap_bio(
+        incoming, outgoing, server_side=server_side,
+        server_hostname=server_hostname,
+        owner=self, session=session
+    )
+ssl.SSLError: Cannot create a client socket with a PROTOCOL_TLS_SERVER context (_ssl.c:826)
+2025-07-02 09:30:24,296 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 09:30:25,459 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 09:30:25,833 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 09:30:25,834 - PySIP.utils.logger - INFO - Call hanged up due to: Bad Request
+2025-07-02 09:30:25,862 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 09:30:25,926 - PySIP.utils.logger - DEBUG - Call stopped before audio processing completed.
+2025-07-02 09:30:25,926 - PySIP.utils.logger - ERROR - Call is no longer ongoing
+2025-07-02 09:32:27,339 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 09:32:29,583 - PySIP.utils.logger - DEBUG - Started stream now - id (46ff9842-cd88-4f32-af0a-8e15c20405fc)
+2025-07-02 09:32:29,584 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 09:33:29,785 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 09:33:32,018 - PySIP.utils.logger - DEBUG - Started stream now - id (1f526c4c-b0ff-441e-9697-8bfd875e2482)
+2025-07-02 09:33:32,018 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 09:35:06,098 - PySIP.utils.logger - INFO - Detecting connection type (UDP/TCP/TLS). This might take some time...
+2025-07-02 09:35:07,851 - PySIP.utils.logger - DEBUG - Successful UDP connection has been made.
+2025-07-02 09:35:48,809 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 09:35:49,839 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 09:35:50,599 - PySIP.utils.logger - DEBUG - Started stream now - id (1ed95b8f-5fad-4619-a06d-5c7e169da1e9)
+2025-07-02 09:35:50,599 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 09:37:25,553 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 14:15:43,982 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:15:45,411 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:15:46,120 - PySIP.utils.logger - DEBUG - Started stream now - id (094308d6-a8f0-4c71-8ad4-f1e2abc36f3d)
+2025-07-02 14:15:46,121 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:18:07,165 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:18:08,367 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:18:08,417 - PySIP.utils.logger - DEBUG - Started stream now - id (d0dc95c0-fb09-4d00-9f6f-39e85c3f116d)
+2025-07-02 14:18:08,418 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:19:00,726 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:19:01,985 - PySIP.utils.logger - DEBUG - Started stream now - id (7ff79772-4d6e-4dc6-bd74-ed4b22fcbd2a)
+2025-07-02 14:19:01,985 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:19:02,001 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:19:57,622 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 14:19:59,254 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:19:59,600 - PySIP.utils.logger - DEBUG - Started stream now - id (7e18d42a-b5e3-4eb4-84da-5bcc70054179)
+2025-07-02 14:19:59,600 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:22:04,877 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:22:06,060 - PySIP.utils.logger - DEBUG - Started stream now - id (8d4a0244-0639-486a-8f37-b00e6073cc05)
+2025-07-02 14:22:06,061 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:22:06,216 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:24:00,164 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:24:01,255 - PySIP.utils.logger - DEBUG - Started stream now - id (d3bde9e4-7bc9-466c-829d-6db502bba13d)
+2025-07-02 14:24:01,255 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:25:23,457 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 14:25:25,239 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:28:00,271 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:28:01,613 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:28:01,734 - PySIP.utils.logger - DEBUG - Started stream now - id (b9475929-14ab-428e-b49c-061c3fb3021c)
+2025-07-02 14:28:01,734 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:28:29,342 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 14:28:30,349 - PySIP.utils.logger - DEBUG - Started stream now - id (d7b2cbca-f6f0-430f-95ed-793b32448027)
+2025-07-02 14:28:30,350 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:28:35,700 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:28:45,224 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:28:46,303 - PySIP.utils.logger - DEBUG - Started stream now - id (f58b04b8-f0cc-4501-ab3d-c588a2cfebb4)
+2025-07-02 14:28:46,303 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:28:46,331 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:32:47,380 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:32:47,381 - PySIP.utils.logger - ERROR - object NoneType can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 98, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 146, in periodic_register
+    await self.register()
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 325, in register
+    await self.sip_core.send(msg)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 276, in send
+    await self.send_to_callbacks(msg)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 262, in send_to_callbacks
+    await callback(data_formatted)
+TypeError: object NoneType can't be used in 'await' expression
+2025-07-02 14:32:48,871 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:32:48,872 - PySIP.utils.logger - ERROR - object NoneType can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 130, in start
+    await asyncio.gather(*_tasks, return_exceptions=False)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 762, in invite
+    await self.sip_core.send(msg)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 276, in send
+    await self.send_to_callbacks(msg)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 262, in send_to_callbacks
+    await callback(data_formatted)
+TypeError: object NoneType can't be used in 'await' expression
+2025-07-02 14:32:48,874 - PySIP.utils.logger - DEBUG - The send handler task has been cancelled
+2025-07-02 14:32:48,998 - PySIP.utils.logger - DEBUG - Started stream now - id (c994d0c8-50e4-4fe0-8225-ff3745cf0bae)
+2025-07-02 14:32:48,998 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:35:05,837 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:35:07,033 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:35:07,225 - PySIP.utils.logger - DEBUG - Started stream now - id (bb170b3e-b370-46bf-b126-d0cc7696d68f)
+2025-07-02 14:35:07,225 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:35:58,658 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 14:36:00,961 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:36:01,183 - PySIP.utils.logger - DEBUG - Started stream now - id (66f8a74b-628a-4ee9-bb09-87623d828023)
+2025-07-02 14:36:01,183 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:36:52,858 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:36:53,012 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:36:53,157 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 98, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 310, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 262, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 344, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 317, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 232, in build_register_message
+    response = self.sip_core.generate_response("REGISTER", nonce, realm, uri)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 142, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 14:36:54,054 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:36:54,467 - PySIP.utils.logger - DEBUG - Started stream now - id (fdeeea0c-7d5f-4395-873a-e2200483290d)
+2025-07-02 14:36:54,467 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:39:05,634 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:39:05,749 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:39:05,853 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 98, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 310, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 262, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 344, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 317, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 232, in build_register_message
+    response = self.sip_core.generate_response("REGISTER", nonce, realm, uri)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 142, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 14:39:06,640 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:39:06,868 - PySIP.utils.logger - DEBUG - Started stream now - id (0a4ee62a-115c-44b5-93b5-087b3e11fa27)
+2025-07-02 14:39:06,868 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:41:00,196 - PySIP.utils.logger - WARNING - Failed register Sip Account: sippy.
+2025-07-02 14:41:09,967 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 14:41:10,223 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:41:10,933 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:41:10,978 - PySIP.utils.logger - DEBUG - Started stream now - id (1974f05c-5e22-433b-8eec-cbb9c3747226)
+2025-07-02 14:41:10,978 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:41:11,140 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 14:41:11,140 - PySIP.utils.logger - INFO - Call hanged up due to: Bad Request
+2025-07-02 14:41:11,238 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 14:41:26,169 - PySIP.utils.logger - WARNING - Failed register Sip Account: sippy.
+2025-07-02 14:41:35,147 - PySIP.utils.logger - WARNING - Failed register Sip Account: sippy.
+2025-07-02 14:41:48,742 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 14:41:48,987 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:41:49,747 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:41:49,974 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 14:41:49,974 - PySIP.utils.logger - INFO - Call hanged up due to: Bad Request
+2025-07-02 14:41:50,028 - PySIP.utils.logger - DEBUG - Started stream now - id (dfbf11ea-6478-42d1-9899-7a841f9d639d)
+2025-07-02 14:41:50,028 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:41:50,052 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 14:42:19,137 - PySIP.utils.logger - WARNING - Failed register Sip Account: sippy.
+2025-07-02 14:42:30,060 - PySIP.utils.logger - WARNING - Failed register Sip Account: sippy.
+2025-07-02 14:42:41,713 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 14:42:41,942 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:42:42,523 - PySIP.utils.logger - DEBUG - Started stream now - id (e7f4f6cf-5452-49ec-9622-c2d26c5f28b3)
+2025-07-02 14:42:42,523 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:42:42,619 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:42:42,799 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 14:42:42,800 - PySIP.utils.logger - INFO - Call hanged up due to: Bad Request
+2025-07-02 14:42:42,822 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 14:43:39,106 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 14:43:39,303 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:43:39,902 - PySIP.utils.logger - DEBUG - Started stream now - id (02f98a61-1877-4e4d-a74c-ae6e2e8da096)
+2025-07-02 14:43:39,903 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:43:39,994 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:43:40,334 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 14:43:40,438 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 14:43:40,439 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 14:43:40,500 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 14:44:48,150 - PySIP.utils.logger - WARNING - Failed register Sip Account: sippy.
+2025-07-02 14:44:57,596 - PySIP.utils.logger - WARNING - Failed register Sip Account: sippy.
+2025-07-02 14:45:08,707 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 14:45:09,751 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:45:09,959 - PySIP.utils.logger - DEBUG - Started stream now - id (4356ea0b-e820-4688-ac4c-5098cf255326)
+2025-07-02 14:45:09,960 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:45:10,007 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 14:45:10,007 - PySIP.utils.logger - INFO - Call hanged up due to: Bad Request
+2025-07-02 14:45:10,054 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 14:47:09,235 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 14:47:21,624 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 14:47:29,074 - PySIP.utils.logger - WARNING - Failed register Sip Account: testminion.
+2025-07-02 14:48:06,462 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:48:06,689 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:48:07,054 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 98, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 310, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 262, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 344, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 317, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 232, in build_register_message
+    response = self.sip_core.generate_response("REGISTER", nonce, realm, uri)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 142, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 14:48:07,654 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:48:07,789 - PySIP.utils.logger - DEBUG - Started stream now - id (1f8c8d89-a4fb-44b9-b332-4fc732c2f175)
+2025-07-02 14:48:07,789 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:51:55,697 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 14:51:56,028 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:51:56,140 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 98, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 310, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 262, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 344, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 317, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 232, in build_register_message
+    response = self.sip_core.generate_response("REGISTER", nonce, realm, uri)
+  File "/nix/store/q76gcywy9gq62a99g6a0d0ja10nk1zzh-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 142, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 14:51:57,697 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:51:59,212 - PySIP.utils.logger - DEBUG - Started stream now - id (c4c4d9b3-4d39-46e0-841f-d087a7a4dc1b)
+2025-07-02 14:51:59,212 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:52:12,364 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 14:52:12,659 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:52:13,383 - PySIP.utils.logger - DEBUG - Started stream now - id (b569efd5-bd6b-4a6c-9de9-5cf723ce91a1)
+2025-07-02 14:52:13,383 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:52:13,404 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:52:13,627 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 14:52:14,076 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 14:52:14,077 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 14:52:14,109 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 14:52:39,955 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 14:52:40,259 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:52:41,010 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:52:41,061 - PySIP.utils.logger - DEBUG - Started stream now - id (80553fba-93e3-4d51-98a0-0d8d97495971)
+2025-07-02 14:52:41,061 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:52:41,229 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 14:52:41,385 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 14:52:41,385 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 14:52:41,413 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 14:53:09,516 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 14:53:09,751 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:53:10,493 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:53:10,544 - PySIP.utils.logger - DEBUG - Started stream now - id (3d88c995-e0fc-4c77-8dd1-ae6756dccc5f)
+2025-07-02 14:53:10,544 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:53:10,721 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 14:53:11,010 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 14:53:11,010 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 14:53:11,097 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 14:59:11,982 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 14:59:12,281 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 14:59:13,337 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 14:59:13,537 - PySIP.utils.logger - DEBUG - Started stream now - id (80d7111f-2499-4f33-8992-d0c144ddcfec)
+2025-07-02 14:59:13,538 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 14:59:13,632 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 14:59:13,789 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 14:59:13,789 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 14:59:13,841 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 15:14:26,590 - PySIP.utils.logger - INFO - Sip Account: sippy registered to the server.
+2025-07-02 15:14:26,892 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 15:14:27,648 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 15:14:27,699 - PySIP.utils.logger - DEBUG - Started stream now - id (673afefb-07c5-4dee-88a7-f962bf2d7f97)
+2025-07-02 15:14:27,699 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 15:14:27,940 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 15:14:28,168 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 15:14:28,168 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 15:14:28,253 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 15:15:38,361 - PySIP.utils.logger - WARNING - Failed register Sip Account: sippy.
+2025-07-02 15:15:39,912 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 15:15:40,115 - PySIP.utils.logger - DEBUG - Started stream now - id (7b44d8ab-32bc-4307-86f9-556e47d98150)
+2025-07-02 15:15:40,115 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 15:15:40,278 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 15:15:40,839 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 15:15:41,006 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 98, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 310, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 262, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 611, in message_handler
+    await self.reinvite(True, msg)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 754, in reinvite
+    reinvite_msg = await asyncio.to_thread(self.generate_invite_message, auth, msg)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 355, in generate_invite_message
+    auth_header = self.generate_auth_header("INVITE", uri, nonce, realm)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 373, in generate_auth_header
+    response = self.sip_core.generate_response(method, nonce, realm, uri)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 142, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 15:16:53,849 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 15:16:54,158 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 15:16:54,939 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 98, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 310, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 262, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 344, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 317, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 232, in build_register_message
+    response = self.sip_core.generate_response("REGISTER", nonce, realm, uri)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 142, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 15:16:58,903 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 15:17:00,362 - PySIP.utils.logger - DEBUG - Started stream now - id (aa44d157-e7d8-4feb-a354-0f541d117ecc)
+2025-07-02 15:17:00,363 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 15:18:29,755 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 15:18:29,905 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 15:18:30,055 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 98, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 310, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 262, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 344, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 317, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 232, in build_register_message
+    response = self.sip_core.generate_response("REGISTER", nonce, realm, uri)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 142, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 15:18:30,779 - PySIP.utils.logger - DEBUG - Started stream now - id (7d3d2f0c-cfd9-4117-abe9-12c2e9de05ad)
+2025-07-02 15:18:30,779 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 15:18:30,803 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 15:19:44,823 - PySIP.utils.logger - INFO - Sip Account: testminion registered to the server.
+2025-07-02 15:19:45,047 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 15:19:45,345 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 98, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 310, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 262, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 344, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 317, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 232, in build_register_message
+    response = self.sip_core.generate_response("REGISTER", nonce, realm, uri)
+  File "/nix/store/f9va1sm1bnyihampxw79g2yx5xzls8c6-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 142, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str

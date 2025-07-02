@@ -30,20 +30,64 @@ nilla.create (
 
       lib.constants.undefined = config.lib.modules.when false { };
 
-      packages.pyVoIP = {
+      packages.edge-tts = {
         systems = [ "x86_64-linux" ];
 
         package =
           {
-            python3Packages,
+            python3,
           }:
-          python3Packages.buildPythonPackage {
-            pname = "pyVoIP";
-            version = sources.pins.pyVoIP.version;
+          python3.pkgs.buildPythonPackage {
+            pname = "edge-tts";
+            version = sources.pins.edge-tts.version;
 
-            src = config.inputs.pyVoIP.src;
+            src = config.inputs.edge-tts.src;
+
+            dependencies = [
+              python3.pkgs.aiohttp
+              python3.pkgs.certifi
+              python3.pkgs.srt
+              python3.pkgs.tabulate
+              python3.pkgs.typing-extensions
+            ];
           };
       };
+
+      packages.PySIP =
+        let
+          project = config.inputs.pyproject.result.lib.project.loadPyproject {
+            projectRoot = config.inputs.PySIP.src;
+          };
+        in
+        {
+          systems = [ "x86_64-linux" ];
+
+          package =
+            {
+              python3,
+              system,
+            }:
+            let
+              pythonPackages = python3.pkgs // {
+                edge-tts = config.packages.edge-tts.result.${system};
+              };
+
+              buildPythonPackageAttrs = project.renderers.buildPythonPackage {
+                python = python3;
+                inherit pythonPackages;
+              };
+            in
+            python3.pkgs.buildPythonPackage (
+              buildPythonPackageAttrs
+              // {
+                depedencies = (buildPythonPackageAttrs.dependencies or [ ]) ++ [ python3.pkgs.scipy ]; # scipy is mentioned in requirements.txt but not pyproject.toml
+                patches = (buildPythonPackageAttrs.patches or [ ]) ++ [
+                  ./patches/PySIP/invite-407.patch
+                  ./patches/PySIP/ssl-fix.patch
+                ];
+              }
+            );
+        };
 
       # With a package set defined, we can create a shell.
       shells.default = {
@@ -53,6 +97,7 @@ nilla.create (
         # Define our shell environment.
         shell =
           {
+            ffmpeg,
             mkShell,
             python3,
             ruff,
@@ -62,11 +107,13 @@ nilla.create (
           mkShell {
             packages = [
               (python3.withPackages (pyPkgs: [
-                config.packages.pyVoIP.result.${system}
+                config.packages.PySIP.result.${system}
                 pyPkgs.discordpy
                 pyPkgs.python-lsp-server
                 pyPkgs.ruff
+                pyPkgs.scipy # HACK: should be a pysip dep
               ]))
+              ffmpeg
             ];
           };
       };

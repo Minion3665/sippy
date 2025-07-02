@@ -1,0 +1,42 @@
+Commit ID: 0d1ead0d7b87a354d6ee6f95c97ec264222e9481
+Change ID: nlqnrkkvtvmsuvyunppxtspxnyrponqq
+Author   : Skyler Grey <sky@a.starrysky.fyi> (2025-07-02 15:11:57)
+Committer: Skyler Grey <sky@a.starrysky.fyi> (2025-07-02 17:49:32)
+
+    fix: allow failed invites with 407
+
+    Previously PySIP only allowed failed invites to have error 401. My SIP
+    provider sends 407 when the proxy server fails to authenticate and uses
+    a different header... (and it looks from posts on the internet[1] that
+    this may be somewhat common)
+
+    [1]: https://andrewjprokop.wordpress.com/2015/01/27/understanding-sip-authentication/
+
+diff --git a/PySIP/sip_call.py b/PySIP/sip_call.py
+index 61f433e167..3213e0be5b 100644
+--- a/PySIP/sip_call.py
++++ b/PySIP/sip_call.py
+@@ -644,7 +644,7 @@
+         if msg.call_id != self.call_id:
+             return
+ 
+-        if msg.status == SIPStatus(401) and msg.method == "INVITE":
++        if (msg.status == SIPStatus(401) or msg.status == SIPStatus(407)) and msg.method == "INVITE":
+             # Handling the auth of the invite
+             self.dialogue.remote_tag = msg.to_tag
+             transaction = self.dialogue.find_transaction(msg.branch)
+diff --git a/PySIP/sip_core.py b/PySIP/sip_core.py
+index e781da717c..4a34f3159c 100644
+--- a/PySIP/sip_core.py
++++ b/PySIP/sip_core.py
+@@ -732,6 +732,10 @@
+                     self.nonce = auth_header.split('nonce="')[1].split('"')[0]
+                     self.realm = auth_header.split('realm="')[1].split('"')[0]
+                     self.qop = auth_header.split("qop=")[1].split('"')[1]
++                proxy_auth_header = self.get_header("Proxy-Authenticate")
++                if proxy_auth_header:
++                    self.nonce = proxy_auth_header.split('nonce="')[1].split('"')[0]
++                    self.realm = proxy_auth_header.split('realm="')[1].split('"')[0]
+                 # dialog_id
+                 contact_header = self.get_header("Contact")
+                 if contact_header:
