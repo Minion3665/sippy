@@ -622,3 +622,712 @@ Traceback (most recent call last):
     A1_string = self.username + ":" + realm + ":" + self.password
                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~
 TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 20:06:02,064 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 20:06:02,168 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/g8f3dcihf7vi2nn50wrs657rsi1l46vz-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 99, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/g8f3dcihf7vi2nn50wrs657rsi1l46vz-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 331, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/g8f3dcihf7vi2nn50wrs657rsi1l46vz-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 283, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/g8f3dcihf7vi2nn50wrs657rsi1l46vz-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 419, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/g8f3dcihf7vi2nn50wrs657rsi1l46vz-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 360, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/g8f3dcihf7vi2nn50wrs657rsi1l46vz-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 249, in build_register_message
+    response = self.sip_core.generate_response(
+        method="REGISTER",
+    ...<5 lines>...
+        cnonce=cnonce,
+    )
+  File "/nix/store/g8f3dcihf7vi2nn50wrs657rsi1l46vz-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 149, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 20:30:31,509 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 20:30:31,614 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 20:30:35,477 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_BB7E4D3D-75B5-4A4C-9185-4B8CAD9FE028_411 timed out. Retrying in 0.55 seconds...
+2025-07-02 20:30:36,025 - PySIP.utils.logger - WARNING - Attempt 2 failed: Connection lost. Retrying in 0.94 seconds...
+2025-07-02 20:30:36,964 - PySIP.utils.logger - ERROR - Registration failed for testminion: Operation REGISTER_BB7E4D3D-75B5-4A4C-9185-4B8CAD9FE028_411 failed: Connection lost
+2025-07-02 20:31:26,297 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 20:31:26,402 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 20:31:30,264 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_92FCA6AB-6653-4FBF-98E1-2F73ACBFF6EF_721 timed out. Retrying in 0.48 seconds...
+2025-07-02 20:31:30,746 - PySIP.utils.logger - WARNING - Attempt 2 failed: Connection lost. Retrying in 0.93 seconds...
+2025-07-02 20:31:31,683 - PySIP.utils.logger - ERROR - Registration failed for testminion: Operation REGISTER_92FCA6AB-6653-4FBF-98E1-2F73ACBFF6EF_721 failed: Connection lost
+2025-07-02 20:31:32,169 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 20:31:32,170 - PySIP.utils.logger - ERROR - cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/nix/store/8i3kh3jj7fjn97qap1b01hf4ip9cj30v-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 130, in start
+    await asyncio.gather(*_tasks, return_exceptions=False)
+  File "/nix/store/8i3kh3jj7fjn97qap1b01hf4ip9cj30v-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 810, in invite
+    msg = await asyncio.to_thread(self.generate_invite_message)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/8i3kh3jj7fjn97qap1b01hf4ip9cj30v-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 347, in generate_invite_message
+    _, local_port = self.sip_core.get_extra_info("sockname")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/nix/store/8i3kh3jj7fjn97qap1b01hf4ip9cj30v-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 120, in get_extra_info
+    peer_ip, peer_port = self.writer.get_extra_info(name)
+    ^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-07-02 20:31:32,171 - PySIP.utils.logger - DEBUG - The send handler task has been cancelled
+2025-07-02 20:31:32,204 - PySIP.utils.logger - DEBUG - Started stream now - id (3ed92862-c590-4226-aea0-7fac70b72c0e)
+2025-07-02 20:31:32,204 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 20:33:04,936 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 20:33:05,042 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 20:33:08,903 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_BB0FC03A-C977-4BA2-82C1-40ABFEF26F4C_1708 timed out. Retrying in 0.45 seconds...
+2025-07-02 20:33:09,358 - PySIP.utils.logger - WARNING - Attempt 2 failed: Connection lost. Retrying in 1.02 seconds...
+2025-07-02 20:33:10,376 - PySIP.utils.logger - ERROR - Registration failed for testminion: Operation REGISTER_BB0FC03A-C977-4BA2-82C1-40ABFEF26F4C_1708 failed: Connection lost
+2025-07-02 20:33:10,924 - PySIP.utils.logger - DEBUG - Started stream now - id (5674c981-dab0-49b4-9202-6177fdc53f47)
+2025-07-02 20:33:10,924 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 20:33:11,169 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 20:33:11,170 - PySIP.utils.logger - ERROR - cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/nix/store/8i3kh3jj7fjn97qap1b01hf4ip9cj30v-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 130, in start
+    await asyncio.gather(*_tasks, return_exceptions=False)
+  File "/nix/store/8i3kh3jj7fjn97qap1b01hf4ip9cj30v-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 810, in invite
+    msg = await asyncio.to_thread(self.generate_invite_message)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/8i3kh3jj7fjn97qap1b01hf4ip9cj30v-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 347, in generate_invite_message
+    _, local_port = self.sip_core.get_extra_info("sockname")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/nix/store/8i3kh3jj7fjn97qap1b01hf4ip9cj30v-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 120, in get_extra_info
+    peer_ip, peer_port = self.writer.get_extra_info(name)
+    ^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-07-02 20:33:11,174 - PySIP.utils.logger - DEBUG - The send handler task has been cancelled
+2025-07-02 21:34:23,885 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 21:34:23,991 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 21:34:27,852 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_47A9CCEE-96AD-41DC-940A-865F39521010_705 timed out. Retrying in 0.50 seconds...
+2025-07-02 21:34:28,360 - PySIP.utils.logger - WARNING - Attempt 2 failed: Connection lost. Retrying in 0.90 seconds...
+2025-07-02 21:34:29,266 - PySIP.utils.logger - ERROR - Registration failed for testminion: Operation REGISTER_47A9CCEE-96AD-41DC-940A-865F39521010_705 failed: Connection lost
+2025-07-02 21:34:29,659 - PySIP.utils.logger - DEBUG - Started stream now - id (7dd0ea39-8077-4297-a5fd-3227a17e4e05)
+2025-07-02 21:34:29,660 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 21:34:30,005 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 21:34:30,006 - PySIP.utils.logger - ERROR - cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/nix/store/hfb8v9ij8vi3vfmmyak0pkrd76svgg2y-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 130, in start
+    await asyncio.gather(*_tasks, return_exceptions=False)
+  File "/nix/store/hfb8v9ij8vi3vfmmyak0pkrd76svgg2y-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 810, in invite
+    msg = await asyncio.to_thread(self.generate_invite_message)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/hfb8v9ij8vi3vfmmyak0pkrd76svgg2y-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 347, in generate_invite_message
+    _, local_port = self.sip_core.get_extra_info("sockname")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/nix/store/hfb8v9ij8vi3vfmmyak0pkrd76svgg2y-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 120, in get_extra_info
+    peer_ip, peer_port = self.writer.get_extra_info(name)
+    ^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-07-02 21:34:30,010 - PySIP.utils.logger - DEBUG - The send handler task has been cancelled
+2025-07-02 21:35:09,754 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 21:35:13,554 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_E4C18785-7449-4D69-81EB-8AA2DF3D5A41_1708 timed out. Retrying in 0.52 seconds...
+2025-07-02 21:35:14,244 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 21:35:18,081 - PySIP.utils.logger - WARNING - Attempt 2 for REGISTER_E4C18785-7449-4D69-81EB-8AA2DF3D5A41_1708 timed out. Retrying in 1.07 seconds...
+2025-07-02 21:35:19,323 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 21:35:23,157 - PySIP.utils.logger - ERROR - Registration failed for sippy: Operation REGISTER_E4C18785-7449-4D69-81EB-8AA2DF3D5A41_1708 failed: Operation REGISTER_E4C18785-7449-4D69-81EB-8AA2DF3D5A41_1708 timed out after 3 attempts
+2025-07-02 21:35:23,726 - PySIP.utils.logger - DEBUG - Started stream now - id (5c1128d4-9f73-4133-a7cf-1559a4dcac63)
+2025-07-02 21:35:23,727 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 21:35:24,073 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 21:35:24,231 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:24,687 - PySIP.utils.logger - DEBUG - Dialog state changed to -> DialogState.INITIAL
+2025-07-02 21:35:24,688 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:24,688 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:24,689 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 21:35:24,778 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 21:35:24,836 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:24,980 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:24,981 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:24,981 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:25,200 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:25,303 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:25,304 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:25,304 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:25,504 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:25,608 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:25,609 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:25,609 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:25,762 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:25,884 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:25,884 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:25,884 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:26,015 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:26,149 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:26,150 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:26,150 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:26,277 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:26,646 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:26,646 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:26,646 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:26,804 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:26,908 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:26,909 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:26,909 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:27,212 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:27,316 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:27,316 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:27,316 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:27,471 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:27,681 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:27,682 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:27,682 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:27,878 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:27,983 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:27,983 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:27,983 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:28,268 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:28,372 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:28,372 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:28,372 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:28,605 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:28,708 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:28,708 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:28,709 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:28,835 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:28,955 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:28,956 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:28,956 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:29,086 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:29,218 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:29,219 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:29,219 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:29,395 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:29,498 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:29,499 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:29,499 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:29,701 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:29,802 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:29,802 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:29,802 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:29,929 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:30,079 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:30,079 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:30,079 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 21:35:30,206 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 21:35:30,334 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 21:35:30,335 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 21:35:30,335 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 22:18:50,284 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:18:54,080 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_3393F648-6FD2-4289-A038-B3C6984ED05B_483 timed out. Retrying in 0.50 seconds...
+2025-07-02 22:18:54,772 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:18:58,589 - PySIP.utils.logger - WARNING - Attempt 2 for REGISTER_3393F648-6FD2-4289-A038-B3C6984ED05B_483 timed out. Retrying in 0.95 seconds...
+2025-07-02 22:18:59,791 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:19:03,547 - PySIP.utils.logger - ERROR - Registration failed for sippy: Operation REGISTER_3393F648-6FD2-4289-A038-B3C6984ED05B_483 failed: Operation REGISTER_3393F648-6FD2-4289-A038-B3C6984ED05B_483 timed out after 3 attempts
+2025-07-02 22:19:04,052 - PySIP.utils.logger - DEBUG - Started stream now - id (2f170389-6c9d-4afe-ba4a-f64c15ef756e)
+2025-07-02 22:19:04,052 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 22:19:04,122 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 22:19:04,293 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 22:19:04,709 - PySIP.utils.logger - DEBUG - Dialog state changed to -> DialogState.INITIAL
+2025-07-02 22:19:04,709 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 22:19:04,710 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 22:19:04,710 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 22:19:04,730 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 22:19:04,848 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 22:19:04,990 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 22:19:04,990 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 22:19:04,990 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 22:19:05,318 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 22:19:05,320 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 22:19:05,320 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 22:19:05,320 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 22:19:05,525 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 22:19:05,629 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 22:19:05,629 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 22:19:05,630 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 22:19:05,830 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 22:19:05,935 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 22:19:05,936 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 22:19:05,936 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 22:19:19,247 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:19:23,050 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_9DEB5DD8-9A0A-47F9-8784-93384E4DD0E5_337 timed out. Retrying in 0.50 seconds...
+2025-07-02 22:19:23,908 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:19:27,550 - PySIP.utils.logger - WARNING - Attempt 2 for REGISTER_9DEB5DD8-9A0A-47F9-8784-93384E4DD0E5_337 timed out. Retrying in 0.93 seconds...
+2025-07-02 22:19:28,629 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:19:47,101 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:19:50,900 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_A7224D79-7A01-4466-90EB-2C0104505D78_1837 timed out. Retrying in 0.46 seconds...
+2025-07-02 22:19:51,609 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:19:55,368 - PySIP.utils.logger - WARNING - Attempt 2 for REGISTER_A7224D79-7A01-4466-90EB-2C0104505D78_1837 timed out. Retrying in 1.07 seconds...
+2025-07-02 22:19:56,830 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:20:22,389 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:20:22,493 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/m6sbs8i218hc5x3pad8gc2acc7r9vjhi-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 99, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/m6sbs8i218hc5x3pad8gc2acc7r9vjhi-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 331, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/m6sbs8i218hc5x3pad8gc2acc7r9vjhi-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 283, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/m6sbs8i218hc5x3pad8gc2acc7r9vjhi-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 419, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/m6sbs8i218hc5x3pad8gc2acc7r9vjhi-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 360, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/m6sbs8i218hc5x3pad8gc2acc7r9vjhi-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 249, in build_register_message
+    response = self.sip_core.generate_response(
+        method="REGISTER",
+    ...<5 lines>...
+        cnonce=cnonce,
+    )
+  File "/nix/store/m6sbs8i218hc5x3pad8gc2acc7r9vjhi-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 149, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 22:21:51,988 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:21:52,093 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:21:55,953 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_916A5ED2-B6B4-47CB-A9F1-9AEE68533510_1353 timed out. Retrying in 0.47 seconds...
+2025-07-02 22:21:56,424 - PySIP.utils.logger - WARNING - Attempt 2 failed: Connection lost. Retrying in 0.99 seconds...
+2025-07-02 22:21:57,413 - PySIP.utils.logger - ERROR - Registration failed for testminion: Operation REGISTER_916A5ED2-B6B4-47CB-A9F1-9AEE68533510_1353 failed: Connection lost
+2025-07-02 22:21:57,807 - PySIP.utils.logger - DEBUG - Started stream now - id (681bd4fa-ba6a-487b-80de-065c7efe9301)
+2025-07-02 22:21:57,808 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 22:21:59,405 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 22:21:59,406 - PySIP.utils.logger - ERROR - cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/nix/store/f2wdp7ifxw98pc0k86ffvh9wqybzg7wl-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 130, in start
+    await asyncio.gather(*_tasks, return_exceptions=False)
+  File "/nix/store/f2wdp7ifxw98pc0k86ffvh9wqybzg7wl-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 810, in invite
+    msg = await asyncio.to_thread(self.generate_invite_message)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/f2wdp7ifxw98pc0k86ffvh9wqybzg7wl-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 347, in generate_invite_message
+    _, local_port = self.sip_core.get_extra_info("sockname")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/nix/store/f2wdp7ifxw98pc0k86ffvh9wqybzg7wl-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 120, in get_extra_info
+    peer_ip, peer_port = self.writer.get_extra_info(name)
+    ^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-07-02 22:21:59,409 - PySIP.utils.logger - DEBUG - The send handler task has been cancelled
+2025-07-02 22:23:55,028 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:23:55,132 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/qa70zbwsmgssf8fmg40mcbk2agchm9i2-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 99, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/qa70zbwsmgssf8fmg40mcbk2agchm9i2-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 331, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/qa70zbwsmgssf8fmg40mcbk2agchm9i2-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 283, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/qa70zbwsmgssf8fmg40mcbk2agchm9i2-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 419, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/qa70zbwsmgssf8fmg40mcbk2agchm9i2-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 360, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/qa70zbwsmgssf8fmg40mcbk2agchm9i2-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 249, in build_register_message
+    response = self.sip_core.generate_response(
+        method="REGISTER",
+    ...<5 lines>...
+        cnonce=cnonce,
+    )
+  File "/nix/store/qa70zbwsmgssf8fmg40mcbk2agchm9i2-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 149, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 22:54:39,200 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:39,305 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:39,410 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:39,516 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:39,621 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:39,726 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:39,830 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:39,935 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:40,040 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:40,145 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:40,250 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:40,356 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:40,462 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:40,567 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:40,673 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:40,778 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:40,883 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:40,987 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:41,092 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:41,198 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:41,304 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:41,408 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:41,515 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:41,621 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:41,725 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:41,830 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:41,936 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:42,041 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:42,146 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:42,250 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:42,354 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:42,458 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:42,564 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:42,669 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:42,773 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:56,635 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:56,739 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:56,844 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:56,949 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:57,053 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:57,159 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:57,263 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:57,370 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:57,476 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:57,580 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:57,686 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:57,791 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:57,896 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:58,003 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:58,108 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:58,214 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:58,320 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:58,425 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:58,530 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:58,636 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:58,740 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:58,846 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:58,951 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:59,056 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:59,162 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:59,268 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:59,373 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:59,478 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:59,583 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:59,688 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:59,794 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:54:59,898 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:00,002 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:00,108 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:00,213 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:00,318 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:00,423 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:00,529 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:00,599 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_22B71EC4-1A09-4928-AD89-832D5804B9B2_950 timed out. Retrying in 0.50 seconds...
+2025-07-02 22:55:00,635 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:00,740 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:00,844 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:00,947 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:01,053 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:01,158 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:01,161 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:01,266 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:01,372 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 22:55:01,477 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:11:12,333 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:11:16,130 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_F04DB85F-3B7F-4A09-896B-7B45B539F50C_1617 timed out. Retrying in 0.50 seconds...
+2025-07-02 23:11:16,835 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:11:20,634 - PySIP.utils.logger - WARNING - Attempt 2 for REGISTER_F04DB85F-3B7F-4A09-896B-7B45B539F50C_1617 timed out. Retrying in 0.97 seconds...
+2025-07-02 23:11:21,800 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:11:25,610 - PySIP.utils.logger - ERROR - Registration failed for sippy: Operation REGISTER_F04DB85F-3B7F-4A09-896B-7B45B539F50C_1617 failed: Operation REGISTER_F04DB85F-3B7F-4A09-896B-7B45B539F50C_1617 timed out after 3 attempts
+2025-07-02 23:11:26,038 - PySIP.utils.logger - DEBUG - Started stream now - id (6c871f40-70aa-43a0-b0eb-09cfa766cb94)
+2025-07-02 23:11:26,039 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 23:11:26,459 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 23:11:26,766 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:11:26,971 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/b8qvirxh6sswn567iyszsdlkcpih4l25-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 99, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/b8qvirxh6sswn567iyszsdlkcpih4l25-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 331, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/b8qvirxh6sswn567iyszsdlkcpih4l25-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 283, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/b8qvirxh6sswn567iyszsdlkcpih4l25-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 660, in message_handler
+    await self.reinvite(True, msg)
+  File "/nix/store/b8qvirxh6sswn567iyszsdlkcpih4l25-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 805, in reinvite
+    reinvite_msg = await asyncio.to_thread(self.generate_invite_message, auth, msg)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/sd81bvmch7njdpwx3lkjslixcbj5mivz-python3-3.13.4/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/b8qvirxh6sswn567iyszsdlkcpih4l25-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 355, in generate_invite_message
+    auth_header = self.generate_auth_header("INVITE", uri, nonce, realm, qop, nc, cnonce)
+  File "/nix/store/b8qvirxh6sswn567iyszsdlkcpih4l25-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_call.py", line 382, in generate_auth_header
+    response = self.sip_core.generate_response(
+        method=method,
+    ...<5 lines>...
+        cnonce=cnonce
+    )
+  File "/nix/store/b8qvirxh6sswn567iyszsdlkcpih4l25-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 149, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 23:13:10,606 - PySIP.utils.logger - ERROR - can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "/nix/store/gaahgpa3c9mgzb5cpc8j6n12yvllv32m-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 99, in run
+    await asyncio.gather(*tasks)
+  File "/nix/store/gaahgpa3c9mgzb5cpc8j6n12yvllv32m-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 331, in receive
+    await self.send_to_callbacks(sip_message_data.decode())
+  File "/nix/store/gaahgpa3c9mgzb5cpc8j6n12yvllv32m-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 283, in send_to_callbacks
+    await callback(data_formatted)
+  File "/nix/store/gaahgpa3c9mgzb5cpc8j6n12yvllv32m-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 419, in message_handler
+    await self.reregister(True, msg)
+  File "/nix/store/gaahgpa3c9mgzb5cpc8j6n12yvllv32m-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 360, in reregister
+    msg = self.build_register_message(auth, data)
+  File "/nix/store/gaahgpa3c9mgzb5cpc8j6n12yvllv32m-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_client.py", line 249, in build_register_message
+    response = self.sip_core.generate_response(
+        method="REGISTER",
+    ...<5 lines>...
+        cnonce=cnonce,
+    )
+  File "/nix/store/gaahgpa3c9mgzb5cpc8j6n12yvllv32m-python3-3.13.4-env/lib/python3.13/site-packages/PySIP/sip_core.py", line 149, in generate_response
+    A1_string = self.username + ":" + realm + ":" + self.password
+                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2025-07-02 23:13:55,531 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:13:59,330 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_1108541F-217A-413B-9B72-5BBAE1E2FA53_162 timed out. Retrying in 0.45 seconds...
+2025-07-02 23:14:00,061 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:14:03,787 - PySIP.utils.logger - WARNING - Attempt 2 for REGISTER_1108541F-217A-413B-9B72-5BBAE1E2FA53_162 timed out. Retrying in 1.02 seconds...
+2025-07-02 23:14:05,010 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:14:08,809 - PySIP.utils.logger - ERROR - Registration failed for sippy: Operation REGISTER_1108541F-217A-413B-9B72-5BBAE1E2FA53_162 failed: Operation REGISTER_1108541F-217A-413B-9B72-5BBAE1E2FA53_162 timed out after 3 attempts
+2025-07-02 23:14:09,206 - PySIP.utils.logger - DEBUG - Started stream now - id (de991060-ab2f-42b2-978a-e94e3fd14e42)
+2025-07-02 23:14:09,206 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 23:14:09,689 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 23:14:09,889 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:10,200 - PySIP.utils.logger - DEBUG - Dialog state changed to -> DialogState.INITIAL
+2025-07-02 23:14:10,200 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:10,201 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:10,201 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 23:14:10,294 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 23:14:10,410 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:10,513 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:10,513 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:10,513 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:10,708 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:10,811 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:10,811 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:10,811 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:11,018 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:11,121 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:11,122 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:11,122 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:11,425 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:11,426 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:11,426 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:11,427 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:11,631 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:11,735 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:11,736 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:11,736 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:11,938 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:12,042 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:12,043 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:12,043 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:12,245 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:12,348 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:12,349 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:12,349 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:12,494 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:12,614 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:12,615 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:12,615 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:12,796 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:12,917 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:12,918 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:12,918 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:13,072 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:13,176 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:13,176 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:13,177 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:13,374 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:13,477 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:13,478 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:13,478 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:13,677 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:13,780 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:13,781 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:13,781 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:13,987 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:14,090 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:14,090 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:14,091 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:14,292 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:14,396 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:14,396 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:14,396 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:14,599 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:14,703 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:14,703 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:14,703 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:15,012 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:15,014 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:15,014 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:15,014 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:15,216 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:15,321 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:15,321 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:15,321 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:15,521 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:15,624 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:15,624 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:15,624 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:15,829 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:15,933 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:15,934 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:15,934 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:16,136 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:16,241 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:16,241 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:16,241 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:16,443 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:16,547 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:16,548 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:16,548 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:16,751 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:16,855 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:16,856 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:16,856 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:17,060 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:17,165 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:17,166 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:17,166 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:17,366 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:17,469 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:17,470 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:17,470 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:17,777 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:17,779 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:17,780 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:17,780 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:17,980 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:14:18,084 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:14:18,085 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:14:18,085 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:14:18,222 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:35,295 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:15:39,092 - PySIP.utils.logger - WARNING - Attempt 1 for REGISTER_B743C2CE-7A17-4EA3-87A6-0E06F1754F9C_1498 timed out. Retrying in 0.55 seconds...
+2025-07-02 23:15:39,798 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:15:43,642 - PySIP.utils.logger - WARNING - Attempt 2 for REGISTER_B743C2CE-7A17-4EA3-87A6-0E06F1754F9C_1498 timed out. Retrying in 0.92 seconds...
+2025-07-02 23:15:44,749 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:15:48,568 - PySIP.utils.logger - ERROR - Registration failed for sippy: Operation REGISTER_B743C2CE-7A17-4EA3-87A6-0E06F1754F9C_1498 failed: Operation REGISTER_B743C2CE-7A17-4EA3-87A6-0E06F1754F9C_1498 timed out after 3 attempts
+2025-07-02 23:15:49,011 - PySIP.utils.logger - DEBUG - Started stream now - id (f35c2d5a-5519-463c-94b1-b2179c64be5c)
+2025-07-02 23:15:49,011 - PySIP.utils.logger - DEBUG - Done preparing all frames in AudioStream
+2025-07-02 23:15:49,073 - PySIP.utils.logger - INFO - CallHandler has been initialized..
+2025-07-02 23:15:49,218 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:49,527 - PySIP.utils.logger - DEBUG - Dialog state changed to -> DialogState.INITIAL
+2025-07-02 23:15:49,527 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:49,528 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:49,528 - PySIP.utils.logger - INFO - Call hanged up due to: Proxy Authentication Required
+2025-07-02 23:15:49,578 - PySIP.utils.logger - DEBUG - The call handler has been stopped
+2025-07-02 23:15:49,717 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:49,913 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:49,913 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:49,913 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:50,139 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:50,244 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:50,245 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:50,245 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:50,446 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:50,551 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:50,551 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:50,551 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:50,752 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:50,857 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:50,857 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:50,858 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:51,060 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:51,165 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:51,165 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:51,165 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:51,367 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:51,471 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:51,471 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:51,472 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:51,675 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:51,779 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:51,780 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:51,780 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:51,985 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:52,089 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:52,090 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:52,090 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:52,399 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:52,401 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:52,401 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:52,402 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:52,596 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:52,700 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:52,701 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:52,701 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:52,904 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:53,008 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:53,009 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:53,009 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:53,210 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:53,313 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:53,314 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:53,314 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:53,451 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:53,561 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:53,562 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:53,562 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:53,700 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:53,823 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:53,823 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:53,823 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:54,033 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:54,138 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:54,138 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:54,138 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:54,277 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:54,405 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:54,406 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:54,406 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:54,557 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:54,685 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:54,685 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:54,686 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:54,829 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:54,947 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:54,947 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:54,947 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:55,157 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:55,262 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:55,263 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:55,263 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:55,464 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:55,568 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:55,569 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:55,569 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:55,772 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:55,876 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:55,877 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:55,877 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:56,080 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:56,184 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:56,185 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:56,185 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:56,389 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:56,493 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:56,494 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:56,494 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:56,693 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:56,797 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:56,797 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:56,797 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:57,104 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:57,105 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:57,106 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:57,106 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:57,306 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:57,410 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:57,411 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:57,411 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:57,614 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:57,719 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:57,720 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:57,720 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:15:57,922 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.DIALING
+2025-07-02 23:15:58,026 - PySIP.utils.logger - DEBUG - Sent INVITE request to the server
+2025-07-02 23:15:58,027 - PySIP.utils.logger - DEBUG - Call state changed to -> CallState.FAILED
+2025-07-02 23:15:58,027 - PySIP.utils.logger - WARNING - The call was already TERMINATED. stop call invoked more than once.
+2025-07-02 23:18:18,649 - PySIP.utils.logger - DEBUG - Register message has been sent to the server
+2025-07-02 23:23:31,559 - PySIP.utils.logger - DEBUG - Register message has been sent to the server

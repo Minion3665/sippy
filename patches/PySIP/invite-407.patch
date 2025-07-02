@@ -1,7 +1,7 @@
-Commit ID: ba14df381f760f2054572123757aeb7762ec332e
+Commit ID: 3dde946abe5f70d282afcd611b52840bb795df1e
 Change ID: nlqnrkkvtvmsuvyunppxtspxnyrponqq
 Author   : Skyler Grey <sky@a.starrysky.fyi> (2025-07-02 15:11:57)
-Committer: Skyler Grey <sky@a.starrysky.fyi> (2025-07-02 19:56:39)
+Committer: Skyler Grey <sky@a.starrysky.fyi> (2025-07-02 20:28:33)
 
     fix: allow failed invites with 407
 
@@ -25,11 +25,41 @@ index 61f433e167..3213e0be5b 100644
              # Handling the auth of the invite
              self.dialogue.remote_tag = msg.to_tag
              transaction = self.dialogue.find_transaction(msg.branch)
+diff --git a/PySIP/sip_client.py b/PySIP/sip_client.py
+index be6d47e5a0..e4d57aaac8 100644
+--- a/PySIP/sip_client.py
++++ b/PySIP/sip_client.py
+@@ -227,6 +227,7 @@
+             unregister = True if self.register_tags["type"] == "UNREGISTER" else False
+             if not received_message:
+                 return
++            print(f"Building register message with {received_message.data}")
+             nonce = received_message.nonce
+             realm = received_message.realm
+             cseq = self.register_counter.current()
 diff --git a/PySIP/sip_core.py b/PySIP/sip_core.py
-index e781da717c..36b6ba47ba 100644
+index e781da717c..04c998e26f 100644
 --- a/PySIP/sip_core.py
 +++ b/PySIP/sip_core.py
-@@ -727,11 +727,13 @@
+@@ -719,6 +719,17 @@
+         branch_header = self.get_header("Via")
+         self.branch = branch_header.split("branch=")[1].split(";")[0]
+ 
++        auth_header_names = ["WWW-Authenticate", "Authorization", "Proxy-Authenticate"]
++        for auth_header_name in auth_header_names:
++            auth_header = self.get_header(auth_header_name)
++            if auth_header:
++                try:
++                    self.nonce = auth_header.split('nonce="')[1].split('"')[0]
++                    self.realm = auth_header.split('realm="')[1].split('"')[0]
++                    self.qop = auth_header.split("qop=")[1].split('"')[1]
++                except IndexError:
++                    pass
++
+         if self.type == SIPMessageType.RESPONSE:
+             try:
+                 self.status = SIPStatus(int(self.type_header[1]))
+@@ -727,11 +738,6 @@
  
                  # RPort
                  self.rport = via_header.split("rport=")[1].split(";")[0]
@@ -38,13 +68,6 @@ index e781da717c..36b6ba47ba 100644
 -                    self.nonce = auth_header.split('nonce="')[1].split('"')[0]
 -                    self.realm = auth_header.split('realm="')[1].split('"')[0]
 -                    self.qop = auth_header.split("qop=")[1].split('"')[1]
-+                auth_header_names = ["WWW-Authenticate", "Authorization", "Proxy-Authenticate"]
-+                for auth_header_name in auth_header_names:
-+                    auth_header = self.get_header(auth_header_name)
-+                    if auth_header:
-+                        self.nonce = auth_header.split('nonce="')[1].split('"')[0]
-+                        self.realm = auth_header.split('realm="')[1].split('"')[0]
-+                        self.qop = auth_header.split("qop=")[1].split('"')[1]
                  # dialog_id
                  contact_header = self.get_header("Contact")
                  if contact_header:

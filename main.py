@@ -39,9 +39,9 @@ async def main():
     await account.register()
     print("Registered account...")
 
-    account.__sip_client.realm = os.environ["SIP_SERVER"] # TODO: can we determine this from the sip headers we are given?
+    # account.__sip_client.realm = os.environ["SIP_SERVER"] # TODO: can we determine this from the sip headers we are given?
 
-    call = account.make_call("a.starrysky.fyi") # Not sure how I call people on other servers - maybe doesn't matter if we always are calling out to sip.telnyx.com phone numbers...
+    call = account.make_call("minion") # Not sure how I call people on other servers - maybe doesn't matter if we always are calling out to sip.telnyx.com phone numbers...
     call_task = call.start()
 
     async def log_call_state():
