@@ -1,0 +1,26 @@
+Commit ID: e7aae88734ce801daee806242ade98d34497609a
+Change ID: pmkznxrxkvkzmuorxvuktvnupzytwuzu
+Author   : Skyler Grey <sky@a.starrysky.fyi> (2025-07-04 08:52:14)
+Committer: Skyler Grey <sky@a.starrysky.fyi> (2025-07-04 08:52:47)
+
+    fix: prevent dropped message on missing tag
+
+    If we didn't have a tag in our message we would previously remove the
+    message from the messages we knew about and then fail to add it back.
+
+    This caused later messages to be refering to nothing inflight dropping
+    them too...
+
+diff --git a/aiovoip/dialog.py b/aiovoip/dialog.py
+index ac4bedb5fa..41452338f9 100644
+--- a/aiovoip/dialog.py
++++ b/aiovoip/dialog.py
+@@ -393,7 +393,7 @@
+ 
+     async def receive_message(self, msg):  # noqa: C901
+ 
+-        if 'tag' not in self.to_details['params']:
++        if 'tag' not in self.to_details['params'] and 'tag' in msg.to_details['params']:
+             del self.app._dialogs[self.dialog_id]
+             self.to_details['params']['tag'] = msg.to_details['params']['tag']
+             self.app._dialogs[self.dialog_id] = self

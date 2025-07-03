@@ -53,10 +53,10 @@ nilla.create (
           };
       };
 
-      packages.PySIP =
+      packages.aiovoip =
         let
           project = config.inputs.pyproject.result.lib.project.loadPyproject {
-            projectRoot = config.inputs.PySIP.src;
+            projectRoot = config.inputs.aiovoip.src;
           };
         in
         {
@@ -77,18 +77,9 @@ nilla.create (
                 inherit pythonPackages;
               };
             in
-            python3.pkgs.buildPythonPackage (
-              buildPythonPackageAttrs
-              // {
-                depedencies = (buildPythonPackageAttrs.dependencies or [ ]) ++ [ python3.pkgs.scipy ]; # scipy is mentioned in requirements.txt but not pyproject.toml
-                patches = (buildPythonPackageAttrs.patches or [ ]) ++ [
-                  ./patches/PySIP/ssl-fix.patch
-
-                  # ./patches/PySIP/invite-407.patch
-                  # ./patches/PySIP/head.patch
-                ];
-              }
-            );
+            python3.pkgs.buildPythonPackage (buildPythonPackageAttrs // {
+              patches = (buildPythonPackageAttrs.patches or []) ++ [ ./patches/aiovoip/missing-tag.patch ];
+            });
         };
 
       # With a package set defined, we can create a shell.
@@ -109,7 +100,7 @@ nilla.create (
           mkShell {
             packages = [
               (python3.withPackages (pyPkgs: [
-                config.packages.PySIP.result.${system}
+                config.packages.aiovoip.result.${system}
                 pyPkgs.discordpy
                 pyPkgs.python-lsp-server
                 pyPkgs.ruff

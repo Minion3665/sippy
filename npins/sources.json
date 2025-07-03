@@ -1,17 +1,20 @@
 {
   "pins": {
-    "PySIP": {
-      "type": "Git",
+    "aiovoip": {
+      "type": "GitRelease",
       "repository": {
         "type": "GitHub",
-        "owner": "moha-abdi",
-        "repo": "PySIP"
+        "owner": "py-craft",
+        "repo": "aiovoip"
       },
-      "branch": "main",
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
       "submodules": false,
-      "revision": "efb7b6fdbda7ac6b75b29b8b7049690b2d2fb1a3",
-      "url": "https://github.com/moha-abdi/PySIP/archive/efb7b6fdbda7ac6b75b29b8b7049690b2d2fb1a3.tar.gz",
-      "hash": "sha256-zehgxBF79g7LE1mhOHIzBe5fTZYYN5ybIezIC2WsItU="
+      "version": "0.2.3",
+      "revision": "de4d0cf59e9578b0c4be7b7ae52cb9de1234336d",
+      "url": "https://api.github.com/repos/py-craft/aiovoip/tarball/refs/tags/0.2.3",
+      "hash": "sha256-46SAgWBtjeQ71Qv/zsqHicOsT9hLiMm2VDsZ8OEmRZs="
     },
     "edge-tts": {
       "type": "GitRelease",
