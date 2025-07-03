@@ -82,10 +82,10 @@ nilla.create (
               // {
                 depedencies = (buildPythonPackageAttrs.dependencies or [ ]) ++ [ python3.pkgs.scipy ]; # scipy is mentioned in requirements.txt but not pyproject.toml
                 patches = (buildPythonPackageAttrs.patches or [ ]) ++ [
-                  ./patches/PySIP/invite-407.patch
                   ./patches/PySIP/ssl-fix.patch
 
-                  ./patches/PySIP/head.patch
+                  # ./patches/PySIP/invite-407.patch
+                  # ./patches/PySIP/head.patch
                 ];
               }
             );

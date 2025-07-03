@@ -18,7 +18,8 @@ account = PySIP.sip_account.SipAccount(
     password = os.environ["SIP_PASSWORD"],
     hostname = f"{os.environ["SIP_SERVER"]}", # ":{os.environ.get("SIP_PORT", 5060)}",
     connection_type=os.environ.get("SIP_PROTOCOL", "AUTO"),
-    caller_id="+447454584076", # TODO: change this to our real phone number..., telnyx will not work without it
+    # caller_id="+447454584076", # TODO: change this to our real phone number..., telnyx will not work without it
+    # uncommenting this results in an R18 error...
 )
 
 @account.on_incoming_call
