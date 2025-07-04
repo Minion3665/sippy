@@ -77,9 +77,15 @@ nilla.create (
                 inherit pythonPackages;
               };
             in
-            python3.pkgs.buildPythonPackage (buildPythonPackageAttrs // {
-              patches = (buildPythonPackageAttrs.patches or []) ++ [ ./patches/aiovoip/missing-tag.patch ];
-            });
+            python3.pkgs.buildPythonPackage (
+              buildPythonPackageAttrs
+              // {
+                patches = (buildPythonPackageAttrs.patches or [ ]) ++ [
+                  ./patches/aiovoip/missing-tag.patch
+                  ./patches/aiovoip/head.patch
+                ];
+              }
+            );
         };
 
       # With a package set defined, we can create a shell.

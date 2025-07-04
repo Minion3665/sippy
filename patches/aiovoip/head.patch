@@ -1,0 +1,45 @@
+Commit ID: 09deb058130a28d90ff57734777b98dcc84ca9c8
+Change ID: lorpvlvmopqtnxsvlrzlxouuvuuozumn
+Author   : Skyler Grey <sky@a.starrysky.fyi> (2025-07-04 16:35:45)
+Committer: Skyler Grey <sky@a.starrysky.fyi> (2025-07-05 00:04:27)
+
+    (no description set)
+
+diff --git a/aiovoip/dialog.py b/aiovoip/dialog.py
+index 41452338f9..927176eff2 100644
+--- a/aiovoip/dialog.py
++++ b/aiovoip/dialog.py
+@@ -377,7 +377,7 @@
+         return await self._incoming.get()
+ 
+ 
+-class InviteDialog(DialogBase):
++class InviteDialog(Dialog):
+     def __init__(self, *args, **kwargs):
+ 
+         if 'method' not in kwargs:
+@@ -411,6 +411,9 @@
+                 self._state = CallState.Terminated
+                 await set_result(msg)
+ 
++            elif msg.status_code == 407:
++                await super(type(self), self).receive_message(msg)
++
+             elif 300 <= msg.status_code < 700:
+                 self._state = CallState.Completed
+                 await set_result(msg)
+diff --git a/aiovoip/transaction.py b/aiovoip/transaction.py
+index 27543ddf63..c1eeb2bd7f 100644
+--- a/aiovoip/transaction.py
++++ b/aiovoip/transaction.py
+@@ -92,8 +92,8 @@
+         self.original_msg.headers['Proxy-Authorization'] = str(Auth.from_authenticate_header(
+             authenticate=msg.headers['Proxy-Authenticate'],
+             method=msg.method,
+-            uri=str(self.to_details),
+-            username=self.to_details['uri']['user'],
++            uri=str(self.from_details),
++            username=self.from_details['uri']['user'],
+             password=self.dialog.password))
+         self.dialog.send_message(msg.method,
+                                  headers=self.original_msg.headers,

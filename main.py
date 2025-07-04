@@ -23,7 +23,7 @@ sip_config = {
 async def run_call(peer: aiovoip.peers.Peer, duration: int):
     call = await peer.invite(
         from_details=aiovoip.Contact.from_header('sip:{}@{}:{}'.format(
-            sip_config['user'], sip_config['local_host'], sip_config['srv_port'])),
+            sip_config['user'], sip_config['srv_host'], sip_config['srv_port'])),
         to_details=aiovoip.Contact.from_header('sip:a.starrysky.fyi@{}:{}'.format(
             sip_config['srv_host'], sip_config['srv_port'])),
         password=sip_config['pwd'])
@@ -33,6 +33,7 @@ async def run_call(peer: aiovoip.peers.Peer, duration: int):
             async for msg in call.wait_for_terminate():
                 print(msg)
                 print("CALL STATUS:", msg.status_code)
+                print(call._state)
     
             print("CALL ESTABLISHED")
             await asyncio.sleep(duration)
@@ -81,5 +82,5 @@ def main():
 
 
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=5)
     main()
