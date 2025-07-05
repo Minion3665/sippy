@@ -36,12 +36,15 @@ nilla.create (
         shell =
           {
             cargo,
+            mkShell,
+            rust-analyzer,
             rustc,
             ...
           }:
           mkShell {
             packages = [
               cargo
+              rust-analyzer
               rustc
             ];
           };
